@@ -168,39 +168,42 @@
            <div class="card-back">
         <h4 class="mb-4 text-center">Sign Up</h4>
         <form action="register" method="POST">
-          @csrf
-          <div class="mb-3 position-relative">
-            <i class="input-icon uil uil-user"></i>
-            <input
-              type="text"
-              class="form-control input-with-icon"
-              placeholder="Full Name"
-              required
-            />
-          </div>
-          <div class="mb-3 position-relative">
-            <i class="input-icon uil uil-at"></i>
-            <input
-              type="email"
-              class="form-control input-with-icon"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="mb-3 position-relative">
-            <i class="input-icon uil uil-lock-alt"></i>
-            <input
-              type="password"
-              class="form-control input-with-icon"
-              placeholder="Password"
-              required/>
-          </div>
-          <br>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-yellow">Register</button>
-          </div>
-          <br>
-        </form>
+  @csrf
+  <div class="mb-3 position-relative">
+    <i class="input-icon uil uil-user"></i>
+    <input
+      type="text"
+      name="name"
+      class="form-control input-with-icon"
+      placeholder="Full Name"
+      required
+    />
+  </div>
+  <div class="mb-3 position-relative">
+    <i class="input-icon uil uil-at"></i>
+    <input
+      type="email"
+      name="email"
+      class="form-control input-with-icon"
+      placeholder="Email"
+      required
+    />
+  </div>
+  <div class="mb-3 position-relative">
+    <i class="input-icon uil uil-lock-alt"></i>
+    <input
+      type="password"
+      name="password"
+      class="form-control input-with-icon"
+      placeholder="Password"
+      required
+    />
+  </div>
+  <br>
+  <div class="d-grid">
+    <button type="submit" class="btn btn-yellow">Register</button>
+  </div>
+</form>
         <label for="toggleForm" class="toggle-text"
           >Already have an account? Login</label>
       </div>
